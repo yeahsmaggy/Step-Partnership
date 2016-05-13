@@ -1,0 +1,11 @@
+<?php
+
+function customerror_uninstall() {
+  db_query("DELETE FROM {variable} WHERE name LIKE 'customerror_%'");
+
+  foreach(_customerror_enum_errors() as $code => $desc) {
+    if (variable_get('site_' . $code, '') == 'customerror/' . $code) {
+      variable_del('site_' . $code, '');
+    }
+  }
+}

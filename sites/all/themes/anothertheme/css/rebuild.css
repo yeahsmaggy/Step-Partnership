@@ -1,0 +1,93 @@
+﻿/* -------------------------------------------------------------- 
+   
+   Rebuild the default browser styles
+   
+   Based on work by Blueprint CSS   
+   http://code.google.com/p/blueprintcss/
+   modified by andy welch: mountainbikerwelch@gmail.com / welchcreative.co.uk
+     
+-------------------------------------------------------------- */
+html, body {
+	height: 100%;
+}
+body, input, textarea {
+	color: #444;
+	font: 75% helvetica,tahoma, Arial, sans-serif;
+	line-height: 1.5;
+}
+html {
+	overflow-y: scroll;
+}
+.clear-both {
+	clear: both;
+}
+input {
+	font-size: 95%;
+}
+a:link {
+	text-decoration: none;
+	color: #AE2159;
+}
+a:visited {
+	color: #AE2159;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #E72F75;
+}
+a:active {
+	color: #E72F75;
+	text-decoration: none;
+}
+li a.active {
+	color: #AE2159;
+	font-weight: normal;
+}
+li a.active:hover {
+	color: #E72F75;
+	text-decoration: none;
+}
+/* Headings
+-------------------------------------------------------------- */
+h2 a:link, h2 a:visited, h2 a:active {
+	color: #444;
+	text-decoration: none;
+}
+-------------------------------------------------------------- */
+p {
+	margin-bottom: 0.75em;
+}
+ol {
+	margin: 0 0 1.5em 2.5em;
+}
+ul {
+	list-style: disc;
+}
+ol {
+	list-style-type: decimal;
+}
+ol ol {
+	list-style: upper-alpha;
+}
+ol ol ol {
+	list-style: lower-roman;
+}
+ol ol ol ol {
+	list-style: lower-alpha;
+}
+ul ul, ol ol, ul ol, ol ul {
+	margin-bottom: 0;
+}
+dl {
+	margin: 0 1.5em;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin-bottom: 1.5em;
+}
+strong {
+	font-weight: bold;
+}

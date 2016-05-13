@@ -1,0 +1,65 @@
+﻿/*This is a 16 column grid with 50 pixel width columns, and 10px width gutters 
+
+Content width:
+950
+
+Full width:
+960
+
+genned with http://www.spry-soft.com/grids/*/
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen, .sixteen  {
+	display: inline;
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+	position: relative;
+}
+.one {
+	width: 50px;
+}
+.two {
+	width: 110px;
+}
+.three {
+	width: 170px;
+}
+.four {
+	width: 230px;
+}
+.five {
+	width: 290px;
+}
+.six {
+	width: 350px;
+}
+.seven {
+	width: 410px;
+}
+.eight {
+	width: 470px;
+}
+.nine {
+	width: 520px;
+}
+.ten {
+	width: 590px;
+}
+.eleven {
+	width: 650px;
+}
+.twelve {
+	width: 710px;
+}
+.thirteen {
+	width: 770px;
+}
+.fourteen {
+	width: 830px;
+}
+.fifteen {
+	width: 890px;
+}
+.sixteen {
+	width: 950px;
+}

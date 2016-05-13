@@ -1,0 +1,37 @@
+﻿/*-------------- nav padding --------------------*/
+#nav li {
+	text-align: center;
+	padding: 0px;
+	display: inline;
+}
+td.key {
+	color: #0073BB;
+	font-size: 11px;
+	padding-right: 5px;
+}
+td.detail {
+	color: #5A5758;
+	width: 75px;
+	font-size: 11px;
+}
+#mini-featured-wrapper table.mini-featured-details {
+	margin-bottom: 5px;
+}
+#search-results-info-tier {
+	margin-top: 10px;
+}
+h3.search-item-heading {
+	background: transparent url(../images/property-search-result-hd-grad-bg.png) no-repeat scroll -195px -1px;
+	color: #5A5758;
+	font-size: 14px;
+	height: 28px;
+	padding-left: 30px;
+	padding-top: 5px;
+}
+h3.search-item-heading a {
+	color: white;
+	float: right;
+	font-size: 18px;
+	margin-top: -25px;
+	padding-right: 25px;
+}

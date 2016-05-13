@@ -1,0 +1,141 @@
+﻿/* $Id: nice_menus_default.css,v 1.6 2007/10/29 16:38:28 add1sun Exp $ */
+/*
+  This is the default layout template for nice menus, and will provide
+  a starting point for the look of your menus. To customize, it's
+  recommended to create a custom CSS file using this file as a template,
+  then configure the module to use your custom CSS file
+  (this is done in the global settings tab of the theme administration.)
+
+  To help understand the CSS, the HTML looks like this, where
+    x is a number;
+    TYPE is down/left/right;
+    PATH is the menu path such as node/343;
+    MID is the menu id such as 33):
+  <ul id='nice-menu-x' class='nice-menu nice-menu-TYPE'>
+    <li id='menu-MID' class='menu-path-PATH'><a href='#'>This is a menu item</a></li>
+    <li class='menuparent menu-path-PATH'><a href='#'>A submenu</a>
+      <ul...><li...>...</li>
+      </ul>
+    </li>
+    ...
+  </ul>
+
+  If you have more than one nice-menu and want to target a particular one,
+  use its id (e.g. ul#nice-menu-2).
+
+  See README.txt and the handbook page (http://drupal.org/node/185543)
+  for some CSS customization examples.
+*/
+/******************************
+ Global CSS for ALL menu types
+******************************/
+ul.nice-menu, ul.nice-menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	border-top: 1px solid #ccc;z-index:500;
+}
+ul.nice-menu li {
+}
+ul.nice-menu a {
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	background: transparent none repeat scroll 0 0;
+	display: block;
+	font-size: 1.4em;
+	font-weight: normal;
+	letter-spacing: 0.01em;
+	padding: 18px 10px;
+	text-transform:capitalize;
+	text-decoration:none;
+	font-weight: bold;
+	color:#444;
+}
+ul.nice-menu ul li {
+	width: 12.5em;z-index:500;
+}
+ul.nice-menu a:hover {
+	color:#e72f75;
+}
+/******************************
+ HORIZONTAL (down) menus
+******************************/
+ul.nice-menu-down {
+	float: left;
+	border: 0;
+}
+ul.nice-menu-down li {
+	margin: 0;
+	border: none;
+	color: #FFFFFF;
+	z-index: 20;
+	letter-spacing: 0px;
+	padding: 0;
+	float: left;
+	position: relative;
+	list-style: none;
+	display: inline;
+	text-align: left;
+	border-right: 1px dotted #dddddd;z-index:500;
+}
+ul.nice-menu-down li.homelink a {
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	background: transparent url(../images/home-icon.png) no-repeat scroll 10px 18px;
+	padding-left: 40px;
+	width: 50px;
+}
+ul.nice-menu-down li.contactlink a {
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	background: transparent url(../images/contact-icon.png) no-repeat scroll 10px 22px;
+	padding-left: 40px;
+}
+
+ul.nice-menu-down li li {
+	border-top: 0;z-index:500;
+}
+ul.nice-menu-down ul {
+	left: 0;z-index:600;
+	border-bottom: 2px solid #e72f75;
+}
+ul.nice-menu-down ul li {
+	clear: both;
+	float: left;
+	display: inline;z-index:700;
+}
+ul.nice-menu-down ul li a {
+	font-size: 1em;
+	text-transform: none;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	padding: 6px 10px;
+	background:white;
+	background: transparent url(../images/white-transparency.png) repeat top left;
+}
+ul.nice-menu-down ul li a:hover {
+}
+ul.nice-menu-down li ul li ul,  {
+	left: 12.5em;
+	top: -1px;z-index:700;
+}
+
+ul.nice-menu-down ul ul li {
+	float:left;z-index:900;
+}
+
+ul.nice-menu-down ul ul {
+border-bottom: 2px solid #e72f75;position:absolute;
+left:12.5em;
+top:-0.5em;z-index:900;
+}
+
+
+
+ul.nice-menu-down .menuparent a {
+	padding-right: 15px;
+}

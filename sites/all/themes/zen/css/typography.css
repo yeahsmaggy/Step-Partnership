@@ -1,0 +1,38 @@
+﻿h1 {
+	font-size: 1.5em;
+	line-height: 1em;
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+h2 {
+	font-size:  	1.438em;
+	line-height: 1.286em;
+	margin-top: 1.286em;
+	margin-bottom: 1.286em;
+}
+h2.events-h2 {
+margin-bottom:15px;
+margin-top:10px;
+}
+h2#testimonials-h2 {
+padding:0 10px;
+}
+h3 {
+}
+.footer-name {
+	text-transform: uppercase;
+}
+.tel {
+	font-size: 19px;
+	font-weight: bold;
+}
+.sidenote {
+	font-size: 0.8333em;
+	line-height: 1.8em;
+}
+h2#step-recommends-h2 {
+padding:0px 20px ;
+}
+#step-recommends p {
+padding:0px 20px ;
+}

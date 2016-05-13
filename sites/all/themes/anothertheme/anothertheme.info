@@ -1,0 +1,28 @@
+name = Another Theme
+description = Theme great
+core = 6.x
+engine = phptemplate
+
+regions[header] = Header
+regions[frontpagecontenttier1] = Front Page Only Region
+regions[content] = Content
+regions[frontpagewidgetarea] = front page specific widget area
+regions[primarywidgetarea] = Primary widget area
+regions[footer] = Footer
+
+stylesheets[all][]   = css/screen.css
+
+scripts[] = scripts/cufon-yui.js
+scripts[] = scripts/Liberation_Sans_400-Liberation_Sans_700.font.js
+scripts[] = scripts/sketchblock_400.font.js
+scripts[] = scripts/hand_of_sean_400.font.js
+scripts[] = http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js
+scripts[] = scripts/jquery.flow.1.2.min.js
+scripts[] = scripts/jquery.cycle.all.min.js
+scripts[] = scripts/vimeo.js
+scripts[] = scripts/carousel.js
+scripts[] = scripts/flickrpl.js
+scripts[] = scripts/shadowbox.js
+
+; Panels layouts. You can place multiple layouts under the "layouts" folder.
+plugins[panels][layouts] = layouts

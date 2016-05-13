@@ -1,0 +1,73 @@
+﻿#menu {
+	height: 45px;
+	float: left;
+	font-weight: bold;
+	display: inline;
+	margin-left: 10px;
+	z-index: 20;
+}
+#nav {
+	clear: both;
+}
+#nav li {
+	border: none;
+	color: #FFFFFF;
+	z-index: 20;
+	letter-spacing: 0px;
+	padding: 0;
+	float: left;
+	position: relative;
+	list-style: none;
+	display: inline;
+	text-align: left;
+}
+#nav li a {
+	background: none;
+	text-decoration: none;
+	display: block;
+	color: black;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	padding: 18px 15px;
+}
+#nav li a:hover {
+/*background:white;
+filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;*/
+	background: transparent url(../images/white-transparency.png) repeat top left;
+}
+#m-nav {
+	color: #0073BB;
+	font-weight: bold;
+}
+#m-nav li {
+	float: left;
+	list-style: none;
+	padding: 18px 0px;
+	color: #0073BB;
+	height: 10px;
+}
+#m-nav li a {
+	border-right: 1px solid #0073BB;
+	color: #0073BB;
+	height: 10px;
+	margin: 5px;
+	padding-right: 10px;
+}
+#m-nav li a.first {
+	border-left: 1px solid #0073BB;
+	padding-left: 10px;
+}
+#m-nav li a.last {
+	border-right: none;
+	padding-left: 0px;
+}
+#m-nav li.last {
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	background: transparent url(../images/fnaim-small-icon.png) no-repeat scroll 105px 13px;
+	width: 135px;
+}

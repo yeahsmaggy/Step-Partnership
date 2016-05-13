@@ -1,0 +1,10 @@
+name = On The Web
+description = A block that links cute icons to your twitter, facebook, youtube, flickr, and myspace presence on the web.
+package = Other
+core = 6.x
+; Information added by drupal.org packaging script on 2013-04-29
+version = "6.x-1.4"
+core = "6.x"
+project = "on_the_web"
+datestamp = "1367196916"
+

@@ -1,0 +1,92 @@
+﻿/* -------------------------------------------------------------- 
+   
+   Rebuild the default browser styles
+   
+   Based on work by Blueprint CSS   
+   http://code.google.com/p/blueprintcss/
+     
+-------------------------------------------------------------- */
+body {
+	background: #ffffff url(../images/blue-bg.jpg) repeat-x top center;
+}
+body, input, textarea {
+	color: black;
+	font: 75% tahoma, Arial, sans-serif;
+	line-height: 1.5;
+}
+input, textarea {
+}
+input {
+	font-size: 95%;
+}
+/* Headings
+-------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+h1, h3, h4, h5, h6 {
+	color: black;
+}
+/* Text elements
+-------------------------------------------------------------- */
+a:link {
+	text-decoration: none;
+	color: #AE2159;
+}
+a:visited {
+	color: #AE2159;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+	color: #E72F75;
+}
+a:active {
+	color: #E72F75;
+	text-decoration: underline;
+}
+p {
+	margin-bottom: 0.75em;
+}
+/*ul {
+	margin: 0 0 1.5em 2.5em;
+}*/
+ol {
+	margin: 0 0 1.5em 2.5em;
+}
+ul {
+	list-style: disc;
+}
+ol {
+	list-style-type: decimal;
+}
+ol ol {
+	list-style: upper-alpha;
+}
+ol ol ol {
+	list-style: lower-roman;
+}
+ol ol ol ol {
+	list-style: lower-alpha;
+}
+ul ul, ol ol, ul ol, ol ul {
+	margin-bottom: 0;
+}
+dl {
+	margin: 0 1.5em;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin-bottom: 1.5em;
+}
+strong {
+	font-weight: bold;
+}
+.transparent_class {
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}

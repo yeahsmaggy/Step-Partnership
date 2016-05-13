@@ -1,0 +1,57 @@
+﻿/* This is a 16 column grid with 60 px width columns and 20 px width gutters */
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve {
+	display: inline;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	position: relative;
+}
+.one {
+	width: 40px;
+}
+.two {
+	width: 100px;
+}
+.three {
+	width: 160px;
+}
+.four {
+	width: 220px;
+}
+.five {
+	width: 280px;
+}
+.six {
+	width: 340px;
+}
+.seven {
+	width: 400px;
+}
+.eight {
+	width: 460px;
+}
+.nine {
+	width: 520px;
+}
+.ten {
+	width: 580px;
+}
+.eleven {
+	width: 640px;
+}
+.twelve {
+	width: 700px;
+}
+.thirteen {
+	width: 760px;
+}
+.fourteen {
+	width: 820px;
+}
+.fifteen {
+	width: 880px;
+}
+.sixteen {
+	width: 940px;
+}

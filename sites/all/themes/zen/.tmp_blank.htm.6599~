@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link href="css/screen.css" rel="stylesheet" type="text/css" />
+        <!--[if IE 6]>
+            <link href="css/ie6.css" rel="stylesheet" type="text/css" />
+        <![endif]-->
+        <!--[if IE 7]>
+            <link href="css/ie7.css" rel="stylesheet" type="text/css" />
+        <![endif]-->
+        <!--[if IE 8]>
+            <link href="css/ie8.css" rel="stylesheet" type="text/css" />
+        <![endif]-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="scripts/jquery.cycle.all.min.js" type="text/javascript">
+        </script>
+        <!--<script src="scripts/vimeo.js" type="text/javascript"></script>-->
+        <script src="scripts/carousel.js" type="text/javascript">
+        </script>
+        <script src="scripts/flickrpl.js" type="text/javascript">
+        </script>
+        <script type="text/javascript" charset="utf-8">
+            
+            
+            $(document).ready(function(){
+                $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=65914865@N00&lang=en-us&format=json&jsoncallback=?", function(data){
+                    $.each(data.items, function(i, item){
+                        $("<img/>").attr("src", item.media.m).appendTo("#images").wrap("<a href='" + item.link + "'></a>");
+                    })
+                    $("#title").html(data.title);
+                    $("#description").html(data.description);
+                    $("#link").html("<a href='" + data.link + "' target=\"_blank\">Visit the Viget Inspiration Pool!</a>");
+                    //Notice that the object here is "data" because that information sits outside of "items" in the JSON feed
+                    $('#images').cycle({
+                        fx: 'fade',
+                        speed: 300,
+                        timeout: 3000,
+                        next: '#next',
+                        prev: '#prev',
+                        pause: 1
+                    });
+                });
+                
+                // Change this to your username to load in your clips
+                var vimeoUserName = 'user506516';
+                
+                // Tell Vimeo what function to call
+                var userInfoCallback = 'userInfo';
+                var videosCallback = 'showThumbs';
+                
+                // Set up the URLs
+                var userInfoUrl = 'http://www.vimeo.com/api/v2/' + vimeoUserName + '/info.json?callback=' + userInfoCallback;
+                var videosUrl = 'http://www.vimeo.com/api/v2/' + vimeoUserName + '/videos.json?callback=' + videosCallback;
+                
+                // This function loads the data from Vimeo
+                function init(){
+                    var head = document.getElementsByTagName('head').item(0);
+                    
+                    var userJs = document.createElement('script');
+                    userJs.setAttribute('type', 'text/javascript');
+                    userJs.setAttribute('src', userInfoUrl);
+                    head.appendChild(userJs);
+                    
+                    var videosJs = document.createElement('script');
+                    videosJs.setAttribute('type', 'text/javascript');
+                    videosJs.setAttribute('src', videosUrl);
+                    head.appendChild(videosJs);
+                }
+                
+                // This function goes through the clips and puts them on the page
+                function showThumbs(videos){
+                    var thumbs = document.getElementById('carousel');
+                    thumbs.innerHTML = '';
+                    
+                    var ul = document.createElement('ul');
+                    ul.setAttribute('id', 'video-list');
+                    thumbs.appendChild(ul);
+                    
+                    for (var i = 0; i < videos.length; i++) {
+                        var thumb = document.createElement('img');
+                        thumb.setAttribute('src', videos[i].thumbnail_small);
+                        thumb.setAttribute('alt', videos[i].title);
+                        thumb.setAttribute('title', videos[i].title);
+                        
+                        var a = document.createElement('a');
+                        a.setAttribute('href', videos[i].url);
+                        a.appendChild(thumb);
+                        
+                        var li = document.createElement('li');
+                        li.appendChild(a);
+                        ul.appendChild(li);
+                    }
+                }
+                // Call our init function when the page loads
+            
+            });
+            
+            
+            $(document).ready(function(){
+                $("div#images").mouseover(function(){
+                    $('#slideshow').cycle('resume');
+                });
+                
+            });
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <div id="site-title">
+                    <span><a href="http://www.fch.com" title="FCH" rel="home">FCH</a></span>
+                </div>
+                <div id="strap-line">
+                    <a>southwark theatres' education partnership</a>
+                </div>
+                <div id="menu" class="twelve">
+                    <ul id="nav">
+                        <li>
+                            <a href="">home</a>
+                        </li>
+                        <li>
+                            <a href="">about</a>
+                        </li>
+                        <li>
+                            <a href="">projects</a>
+                        </li>
+                        <li>
+                            <a href="">festivals</a>
+                        </li>
+                        <li>
+                            <a href="">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="main-wrapper">
+                <div id="main-content" class="nine">
+                    <div id="welcome" class="nine no-grid-margin">
+                        <div id="welcome-image" class="six no-margin-left">
+                            <img class="welcome-image" src="images/welcome-photo.png" alt="" />
+                        </div>
+                        <div id="welcome-text" class="three no-margin-right">
+                            <h2>What's this all about?</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="">Do something</a>
+                                </li>
+                                <li>
+                                    <a href="">Do something</a>
+                                </li>
+                                <li>
+                                    <a href="">Do something</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="testimonials" class="nine cntwrp-vert-marg-top cntwrp-vert-marg-bottom">
+                        <h2 id="testimonials-h2">Testimonials</h2>
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        </p>
+                    </div>
+                    <div id="events" class="nine no-grid-margin">
+                        <div id="school-events" class="four no-margin-left">
+                            <h2 class="events-h2">School Events</h2>
+                            <div class="event-item-wrapper" class="four no-margin-left">
+                                <div class="thumbnail one no-margin-left">
+                                    <img src="images/event-thumbnail.png" alt="" />
+                                </div>
+                                <div class="event-info">
+                                    <h3>Event Title</h3>
+                                    <h4>Date</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="event-item-wrapper" class="four no-margin-left">
+                                <div class="thumbnail one no-margin-left">
+                                    <img src="images/event-thumbnail.png" alt="" />
+                                </div>
+                                <div class="event-info">
+                                    <h3>Event Title</h3>
+                                    <h4>Date</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="theatre-events" class="four no-margin-left">
+                            <h2 class="events-h2">Theatre Events</h2>
+                            <div class="event-item-wrapper" class="four no-margin-left">
+                                <div class="thumbnail one no-margin-left">
+                                    <img src="images/event-thumbnail.png" alt="" />
+                                </div>
+                                <div class="event-info">
+                                    <h3>Event Title</h3>
+                                    <h4>Date</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="event-item-wrapper" class="four no-margin-left">
+                                <div class="thumbnail one no-margin-left">
+                                    <img src="images/event-thumbnail.png" alt="" />
+                                </div>
+                                <div class="event-info">
+                                    <h3>Event Title</h3>
+                                    <h4>Date</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="stats">
+                    </div>
+                    <div>
+                        <p id="bio">
+                    </div>
+                    <div class="infinitecarousel nine no-grid-margin cntwrp-vert-marg-top">
+                        <div id="carousel" class="wrapper">
+                            <ul id="video-list">
+                                <li>
+                                    <a href=""></a>
+                                    <img src="images/video-thumbnail.png" alt="" />
+                                </li>
+                                <li>
+                                    <a href=""></a>
+                                    <img src="images/video-thumbnail-pu.png" alt="" />
+                                </li>
+                                <li>
+                                    <a href=""></a>
+                                    <img src="images/video-thumbnail-gr.png" alt="" />
+                                </li>
+                                <li>
+                                    <a href=""></a>
+                                    <img src="images/video-thumbnail-ye.png" alt="" />
+                                </li>
+                                <li>
+                                    <a href=""></a>
+                                    <img src="images/video-thumbnail.png" alt="" />
+                                </li>
+                                <li>
+                                    <a href=""></a>
+                                    <img src="images/video-thumbnail.png" alt="" />
+                                </li>
+                                <li>
+                                    <a href=""></a>
+                                    <img src="images/video-thumbnail.png" alt="" />
+                                </li>
+                                <li>
+                                    <a href=""></a>
+                                    <img src="images/video-thumbnail.png" alt="" />
+                                </li>
+                                <li>
+                                    <a href=""></a>
+                                    <img src="images/video-thumbnail.png" alt="" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar" class="three">
+                    <div id="social-icons" class="block three no-grid-margin">
+                        <img class="social-icons" src="images/doodle-icons.png" alt="" />
+                    </div>
+                    <div id="step-recommends" class="block three no-grid-margin">
+                        <h2 id="step-recommends-h2">step recommends</h2>
+                        <p class="step-recommends-p">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        </p>
+                        <p class="step-recommends-p">
+                            the globe theatre
+                        </p>
+                    </div>
+                    <div id="get-involved" class="block three no-grid-margin">
+                        <p>
+                            <a class="get-involved-text" href="">get involved</a>
+                        </p>
+                    </div>
+                    <div id="polaroid-snaps" class="block three no-grid-margin">
+                        <!--  <h1 id="title"></h1> Title of the Flickr pool --><!-- <p id="description"></p> //Description of the images pool--><!-- <p id="link"></p> //Link to the images pool-->
+                        <div id="images">
+                        </div>
+                        <!--//Container for the images-->
+                        <div id="flickrNav">
+                            <!--//Navigation for the images--><a id="prev" href="#">Prev</a>
+                            <a id="next" href="#">Next</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="small-logo">
+                </div>
+            </div>
+            <div id="footer">
+                <div id="footer-tier-1">
+                </div>
+                <div id="footer-tier-2">
+                    <a class="first">Site</a>
+                    <a>Useful Links</a>
+                    <a>Contact</a>
+                    <a class="last">FNAIM Registered</a>
+                    <br/>
+                    ©2010 STEP 
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

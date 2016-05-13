@@ -1,0 +1,176 @@
+﻿html {
+	overflow-x: hidden;
+}
+html, body {
+	height: 100%;
+}
+#menu {
+	height: 45px;
+}
+h2#quick-property-search-hd {
+	background: transparent url(../images/magnifying-glass.gif) no-repeat scroll 140px 10px;
+}
+#nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#nav li {
+	border: none;
+	background: none;
+	color: #FFFFFF;
+	line-height: 45px;
+	z-index: 20;
+	letter-spacing: 0px;
+	float: left;
+	position: relative;
+	list-style: none;
+}
+#nav li.home {
+	width: 105px;
+	padding: 0px;
+}
+#nav li.for-sale {
+	width: 174px;
+	padding: 0px;
+}
+#nav li.for-sale a {
+	padding-left: 15px;
+	color: white;
+}
+#nav li.links {
+	width: 120px;
+	padding: 0px;
+}
+#nav li.discover-france {
+	padding: 0px;
+	width: 227px;
+}
+#nav li.contact {
+	display: inline;
+	padding: 0;
+	width: 125px;
+}
+#nav li.login {
+	font-weight: normal;
+	padding: 0;
+	width: 90px;
+}
+#nav li.register {
+	font-weight: normal;
+	padding: 0;
+	width: 75px;
+}
+#nav li.accueil {
+	width: 130px;
+	padding: 0px;
+}
+#nav li.nos-affaires {
+	width: 150px;
+	padding: 0px;
+}
+#nav li.nos-affaires a {
+	color: white;
+	text-align: center;
+	width: 150px;
+}
+#nav li.vous-vendez {
+	width: 175px;
+	padding: 0px;
+}
+#nav li.liens {
+	padding: 0px;
+}
+#nav li.liens a {
+	color: white;
+	width: 100px;
+}
+#nav li.contactez {
+	width: 150px;
+	padding: 0px;
+}
+#nav li.identifiant {
+	font-weight: normal;
+	width: 85px;
+	padding: 0px;
+}
+#nav li.crear-compte {
+	font-weight: normal;
+	padding: 0;
+	width: 130px;
+}
+#recent-properties-nav li.new-icon {
+	background: transparent url(../images/blue-arrow.gif) no-repeat scroll 140px 10px;
+	border-top: medium none;
+	padding-top: 0px;
+	height: 36px;
+}
+#recent-properties-nav li.new-icon a {
+	background: transparent url(../images/new-sign-icon.gif) no-repeat 0px 0px;
+	border-top: medium none;
+	padding-left: 35px;
+	height: 25px;
+	display: block;
+	margin-top: 5px;
+}
+td.key {
+	color: #0073BB;
+	font-size: 11px;
+	padding-right: 5px;
+}
+td.detail {
+	color: #5A5758;
+	width: 75px;
+	font-size: 11px;
+}
+#mini-featured-wrapper table.mini-featured-details {
+	margin-bottom: 5px;
+}
+h2#recent-properties-featured a {
+	background: none;
+}
+h2#recent-properties-featured {
+	background: transparent url(../images/light-blue-hd-bg-rd-ic.png) no-repeat scroll center top;
+	margin-bottom: -15px;
+}
+#homepage-featured {
+	height: 303px;
+	background-repeat: no-repeat;
+}
+#mini-featured-wrapper.second {
+	border-bottom: none;
+}
+h2#prestige-hd {
+	background: transparent url(../images/gold-prestige-bg-flat.png) no-repeat scroll center top;
+}
+#main-wrapper {
+	overflow: hidden;
+	padding-bottom: 0px;
+	clear: both;
+}
+h3.search-item-heading {
+	background: transparent url(../images/property-search-result-hd-grad-bg.png) no-repeat scroll -195px -1px;
+	color: #5A5758;
+	font-size: 14px;
+	height: 28px;
+	padding-left: 30px;
+	padding-top: 5px;
+}
+h3.search-item-heading a {
+	color: white;
+	float: right;
+	font-size: 18px;
+	margin-top: -25px;
+	padding-right: 25px;
+}
+#footer {
+	border-bottom: 8px solid #D1E6F3;
+	bottom: 0;
+	clear: both;
+	font-size: 90%;
+	height: 0px;
+	letter-spacing: -0.01em;
+	margin-left: 5px;
+	position: relative;
+	width: 950px;
+}

@@ -1,0 +1,10 @@
+name = Custom Error
+description = Enables the creation of custom error pages for 404 and 403 errors, as well as redirects for 404s.
+core=6.x
+
+; Information added by drupal.org packaging script on 2013-08-01
+version = "6.x-1.2"
+core = "6.x"
+project = "customerror"
+datestamp = "1375395367"
+

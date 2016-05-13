@@ -1,0 +1,119 @@
+﻿/* --------------------------------------------------------------
+ 
+ Typographic styles
+ 
+ by andy welch: mountainbikerwelch@gmail.com / welchcreative.co.uk
+ 
+ -------------------------------------------------------------- */
+h1 {
+    font-size: 3.5em;
+    line-height: 1em;
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-family:;
+}
+
+h1.sitesloganstep {
+    color: white;
+    font-size: 47px;
+	font-weight: normal;
+    line-height: 0.9em;
+}
+
+h2 {
+    font-size: 1.6em;
+    padding: 18px 0px;
+    font-family: Hand Of Sean, helvetica;
+    color: #444;
+}
+
+h2.events-h2 {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+h2#testimonials-h2 {
+    padding: 0 10px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #e72f75;
+}
+
+h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 1em;
+    font-style: italic;
+}
+
+h6, h7 {
+    font-size: 0.8em;
+}
+
+.footer-name {
+    text-transform: uppercase;
+}
+
+.tel {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.sidenote {
+    font-size: 0.8333em;
+    line-height: 1.8em;
+}
+
+h2#step-recommends-h2, #step-recommends p {
+    padding: 0px 20px;
+}
+
+#block-search-0 h3 {
+    font-family: Hand Of Sean, helvetica;
+    color: #444;
+}
+
+span.item-enquire {
+}
+
+#pagetemplate-main-content span.item-enquire a {
+  -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+	behavior: url(/css/border-radius.htc);
+background:none repeat scroll 0 0 #E72F75;
+clear:both;
+color:white;
+display:block;
+float:left;
+font-size:1.2em;
+font-weight:bold;
+margin-left:10px;
+margin-top:18px;
+padding:5px 10px;
+}
+
+#pagetemplate-main-content div.catalogue-item ul.links li a {
+    color: #fff;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    border-radius: 2px;
+	behavior: url(/css/border-radius.htc);
+    padding: 4px 10px;
+    
+    border-radius: 2px;
+	background:none repeat scroll 0 0 #03868B; font-weight:bold;
+	border:1px solid #666;
+}
+#catalogue-item p {display:none;}
+#pagetemplate-main-content div.finder-7 div.prefix p {
+margin-bottom:18px;
+padding:0;
+}

@@ -1,0 +1,315 @@
+﻿html {
+	overflow-x: hidden;
+}
+html, body {
+	height: 100%;
+}
+#strap-line {
+	background: transparent url(../images/green-transparency.png) repeat scroll left top;
+	font-family: arial;
+	height: 24px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	line-height: 18px;
+	font-weight: normal;
+}
+#main-wrapper{
+	width:970px;
+	min-height:100%;
+  height:auto !important;
+  height:100%;
+
+}
+#main-content {
+	/*margin-bottom:144px;*/
+		min-height:100%;
+  height:auto !important;
+  height:100%;
+
+}
+#step-logo-small {background:url("../images/step-small-logo.png") no-repeat scroll right bottom transparent;
+height:110px;
+float:right;padding:0;margin:0;/*margin-top:288px;*/
+}
+h1.sitesloganstep {
+	color: white;
+	font-size: 42px;
+	line-height: 18px;
+	font-weight: normal;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0;
+}#block-panels_mini-introareaminipanel div {
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+DIV#block-views-Testimonials-block_2 .views-field-body {
+	width:680px;
+}
+#block-panels_mini-introareaminipanel {
+	margin-bottom: 18px;
+}
+div#mini-panel-introareaminipanel .panel-col-first {
+}
+div#mini-panel-introareaminipanel .panel-col-last {
+	margin-left: 10px;
+}
+#welcome-image img {
+	border: 1px solid #E72F75;
+	height: 290px;
+	margin-left: 20px;
+	margin-top: 36px;
+	width: 440px;
+}
+#mini-panel-introareaminipanel {
+	background: url(../images/notepaper-ie6.gif) no-repeat scroll 5px 7px transparent;
+}
+#menu {
+	background: transparent url(../images/menu-paper-ie6.png) no-repeat scroll center top;
+	z-index: 400;
+}
+#block-panels_mini-steprecommends {
+	background: transparent url(../images/post-it-ie6.png) no-repeat scroll left top;
+}
+#block-on_the_web-0 {
+	background: transparent url(../images/white-post-it-ie6.png) no-repeat top left;
+}
+#nav li.homelink {
+	background: transparent;
+}
+#nav li.homelink a {
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	padding-top: 18px;
+	margin: 0;
+	width: 50px;
+}
+p.get-involved {
+	color: white;
+	font-size: 3em;
+	font-weight: bold;
+	letter-spacing: 0;
+	line-height: 36px;
+	padding-left: 20px;
+	padding-top: 15px;
+	height: 72px;
+	margin-bottom: 18px;
+}
+#nav li.contactlink a {
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	padding-top: 0px;
+	margin: 0;
+}
+#nav li.contactlink {
+	background: transparent;
+}
+.iereset {
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	display: inline;
+	line-height: 18px;
+}
+#block-search-0 {
+	background: transparent url(../images/pink-box-tilt-left-ie6.gif) no-repeat scroll left top;
+}
+#search-block-form .form-submit {
+	margin-right:-20px;
+}
+#block-views-Testimonials-block_2 {
+	background: transparent url(../images/graph-paper-flat-ie6.gif) no-repeat scroll left bottom;
+}
+#polaroid-snaps {
+	background: transparent url(../images/polaroid-ie6.gif) no-repeat scroll -5px 0;
+	float:left;
+}
+#sidebar {
+	display: inline;
+	width:200px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	position: relative;
+	margin-bottom:54px;
+}
+#pagetemplate-main-content {
+	background: transparent url(../images/white-paper-bg-ie6.png) repeat-y 0px 0px;
+}
+#pagetemplate-main-content #whats-on-page-view div.pane-content ul li div.views-field-teaser {
+	display: inline;
+	float: left;
+	width: 550px;
+	margin: 10px;
+	padding: 0;
+}
+#pagetemplate-main-content li {
+	margin: 0px 20px;
+	/*display: inline;*/
+	/*float: left;*/
+		list-style-position: outside;
+	list-style-type:disc;
+}
+#pagetemplate-main-content ul {
+	list-style-type:disc;
+}
+ul.nice-menu-down li ul li ul,  {
+	left: 12.5em;
+	top: -1px;
+	z-index: 700;
+	height: 1px /* presumeably this gives the hasLayout thing */;
+	background: white;
+}
+ul.nice-menu-down ul ul li {
+	float: left;
+	z-index: 900;
+	height: 1px/* presumeably this gives the hasLayout thing */;
+	background: white;
+}
+ul.nice-menu-down ul ul {
+	border-bottom: 2px solid #e72f75;
+	position: absolute;
+	left: 12.5em;
+	top: -0.5em;
+	z-index: 900;
+	height: 1px/* presumeably this gives the hasLayout thing */;
+	background: white;
+}
+ul.nice-menu a, ul.nice-menu a:link, ul.nice-menu a:visited, ul.nice-menu a:active {
+	color: #444;
+	text-decoration: none;
+}
+ul.nice-menu a:hover {
+	color: #e72f75;
+	text-decoration: none;
+}
+ul.nice-menu-down .menuparent a {
+	padding-right: 15px;
+}
+ul.nice-menu li ul li ul li {
+	 min-height:36px;
+  height:auto !important;
+  height:36px;
+}
+ul.nice-menu li ul li {
+	 min-height:36px;
+  height:auto !important;
+  height:36px;
+}
+
+#pagetemplate-main-content #comments {
+	float: left;
+	margin: 18px 10px 0;
+	width: 620px;
+}
+#pagetemplate-main-content #comments .links ul {
+	padding: 6px 0;
+	width: 35%;
+	height: 4em;
+}
+#pagetemplate-main-content #comments .links li {
+	font-size: 0.9em;
+	display: inline;
+	height: 1em;
+	width: 40px;
+}
+#pagetemplate-main-content #comments .links li a {
+	display: block;
+	height: 1em;
+	width: 40px;
+}
+#pagetemplate-main-content table tbody tr td ul li {
+	list-style-position: outside;
+	margin: 0;
+	padding: 0;
+	float:left;
+	clear: both;
+	list-style: disc;
+}
+#pagetemplate-main-content table {
+	float: left;
+	clear: both;
+	display:inline;
+}
+#pagetemplate-main-content table tbody tr td ul {
+	list-style: disc outside;
+}
+#primarywidgetarea {
+	float: left;
+	display: inline;
+	margin:0;
+	padding:0;
+	width:180px;
+}
+#frontpagewidgetarea {
+	float: left;
+	display: inline;
+	margin:0;
+	padding:0;
+	width:180px;
+}#footer-links-wrapper  {
+margin:0 auto;
+width:960px;
+display:inline;
+float:left;
+}
+div.infinitecarousel {
+	background: transparent url(../images/camera-film-ie6.gif) no-repeat scroll 0px 0;}
+div#push {height:10px;float:left;display:inline;position:relative;width:960px;
+}#footer {
+	bottom: 0;
+	clear: both;
+	font-size: 90%;
+	height: 240px;
+	letter-spacing: -0.01em;
+	margin-left: 5px;
+	margin-top: 10px;
+	padding-top: 10px;
+	position: absolute;
+	width: 960px;
+	display: block;
+	margin: auto;
+}
+div#southwark-link {
+	margin-left:180px;
+}
+#block-block-7 {
+	width:210px;
+}
+#carousel {
+	height:148px;width:580px;}
+	.infinitecarousel .back {
+background-position:0 -72px;
+left:0;
+}
+.infinitecarousel .arrow {
+background:url("../images/arrow-ie6.png") no-repeat scroll 0 0 transparent;
+cursor:pointer;
+display:block;
+height:36px;
+outline:0 none;
+position:absolute;
+text-indent:-999px;
+top:72px;
+width:37px;
+}
+#arrow-back {
+	background-position:0 -72px;
+left:0;
+}
+#arrow-back:hover {
+	background-position:0 -108px;
+left:0;
+}
+
+#block-on_the_web-0 {
+background:url("../images/white-post-it.png") no-repeat scroll left top transparent;
+height:170px;
+margin-bottom:18px;
+width:230px;
+}
